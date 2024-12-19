@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Daftar Mata Kuliah yang dipilih, tambahkan sesuai dengan tampilan yang Anda inginkan -->
+    <ListView
+        android:id="@+id/mataKuliahListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Tampilan jumlah SKS yang telah dipilih -->
+    <TextView
+        android:id="@+id/totalSksTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total SKS: 0"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:paddingTop="16dp" />
+
+    <!-- Tombol untuk melanjutkan ke Ringkasan Pendaftaran -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanjutkan"
+        android:onClick="lanjutKeRingkasan" />
+</LinearLayout>
